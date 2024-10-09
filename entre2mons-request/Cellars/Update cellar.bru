@@ -1,0 +1,22 @@
+meta {
+  name: Update cellar
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:3000/cellars/31
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "cellar": "Mi Bodega Magnifica",
+    "description": "Una bodega especializada en vinos finos y gruesos.",
+    "distance": 1550,
+    "regionId": 3,
+    "supplierId": [1, 2],
+    "soilId": [1, 8]
+  }
+}

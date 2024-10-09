@@ -1,0 +1,18 @@
+meta {
+  name: Update country
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:3000/countries/13
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "country": "India",
+    "description": "aaaaaaaaaaaaaaaaaa"
+  }
+}

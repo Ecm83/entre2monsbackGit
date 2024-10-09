@@ -1,0 +1,19 @@
+meta {
+  name: Update vintage
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:3000/vintages/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "vintage": 2000,
+    "grapeId": [6,7,8],
+    "wineId": []
+  }
+}

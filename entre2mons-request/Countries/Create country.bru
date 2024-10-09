@@ -1,0 +1,18 @@
+meta {
+  name: Create country
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/countries
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "country": "India",
+    "description": "dsfsdfsdsfsdfsdfds"
+  }
+}

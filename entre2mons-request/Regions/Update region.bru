@@ -1,0 +1,19 @@
+meta {
+  name: Update region
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:3000/regions/31
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "region": "Alella",
+    "description": "Alella está situada entreBarcelona i el Maresme, especialitzats en vins blancs el seus negres amb cos no tenen res que envejar als vins de la Rioja o Rivera del Duero",
+    "countryId": 3
+  }
+}
