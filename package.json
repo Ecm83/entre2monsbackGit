@@ -15,7 +15,8 @@
     "db:seed": "npx sequelize db:seed:all",
     "db:seed:one": "npx sequelize db:seed --seed",
     "db:new:seed": "npx sequelize-cli seed:generate --name",
-    "db:no:seed": "npx sequelize-cli db:seed:undo:all"
+    "db:no:seed": "npx sequelize-cli db:seed:undo:all",
+    "test": "jest --runInBand"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
